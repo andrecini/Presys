@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cálculo_De_Incertezas", "Cálculo_De_Incertezas\Cálculo_De_Incertezas.csproj", "{8980C915-4156-4416-97D2-7E2A2137E89C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8980C915-4156-4416-97D2-7E2A2137E89C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8980C915-4156-4416-97D2-7E2A2137E89C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8980C915-4156-4416-97D2-7E2A2137E89C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8980C915-4156-4416-97D2-7E2A2137E89C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

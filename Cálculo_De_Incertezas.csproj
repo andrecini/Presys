@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8980C915-4156-4416-97D2-7E2A2137E89C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cálculo_De_Incertezas</RootNamespace>
+    <AssemblyName>Cálculo_De_Incertezas</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="calc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="calc.Designer.cs">
+      <DependentUpon>calc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CERTIFICADO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CERTIFICADO.Designer.cs">
+      <DependentUpon>CERTIFICADO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cálculos.cs" />
+    <Compile Include="desvio_padrao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="desvio_padrao.Designer.cs">
+      <DependentUpon>desvio_padrao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Isoplan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Isoplan.Designer.cs">
+      <DependentUpon>Isoplan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mediana.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mediana.Designer.cs">
+      <DependentUpon>Mediana.cs</DependentUpon>
+    </Compile>
+    <Compile Include="meses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="meses.Designer.cs">
+      <DependentUpon>meses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="moda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="moda.Designer.cs">
+      <DependentUpon>moda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="calc.resx">
+      <DependentUpon>calc.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CERTIFICADO.resx">
+      <DependentUpon>CERTIFICADO.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="desvio_padrao.resx">
+      <DependentUpon>desvio_padrao.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Isoplan.resx">
+      <DependentUpon>Isoplan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mediana.resx">
+      <DependentUpon>Mediana.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="meses.resx">
+      <DependentUpon>meses.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="moda.resx">
+      <DependentUpon>moda.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Somatoria.resx">
+      <DependentUpon>Somatoria.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Taxa.resx">
+      <DependentUpon>Taxa.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ValorFuturo.resx">
+      <DependentUpon>ValorFuturo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ValorPresente.resx">
+      <DependentUpon>ValorPresente.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Somatoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Somatoria.Designer.cs">
+      <DependentUpon>Somatoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Taxa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Taxa.Designer.cs">
+      <DependentUpon>Taxa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ValorFuturo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ValorFuturo.Designer.cs">
+      <DependentUpon>ValorFuturo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ValorPresente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ValorPresente.Designer.cs">
+      <DependentUpon>ValorPresente.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
